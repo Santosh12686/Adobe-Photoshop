@@ -24,3 +24,4 @@ Thank you for contributing! To maintain clean source files and high-quality expo
 2.  **Add Assets:** Save your `.psd` in the `src/` folder and web exports in `dist/`.
 3.  **Open a PR:** Fill out the Pull Request template completely, including visual screenshots of your design.
 4.  **Review:** Wait for design lead approval before merging.
+
