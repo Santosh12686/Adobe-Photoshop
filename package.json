@@ -1,0 +1,11 @@
+{
+  "name": "harbourline-savings-calculator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "One-page savings calculator with monthly deposits and compound interest.",
+  "scripts": {
+    "test": "node --test calculator.test.js",
+    "start": "npx --yes serve . -l 4173"
+  }
+}
