@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Harbourline Savings Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="brand">
+        <p class="eyebrow">Harbourline</p>
+        <h1>Savings Calculator</h1>
+        <p class="lede">
+          Enter a starting balance, monthly deposit, interest rate and term to
+          see the projected final balance.
+        </p>
+      </header>
+
+      <form id="calculator-form" class="card" novalidate>
+        <label>
+          Starting balance (£)
+          <input
+            id="starting-balance"
+            name="startingBalance"
+            type="number"
+            min="0"
+            step="0.01"
+            value="5000"
+            required
+          />
+        </label>
+        <label>
+          Monthly deposit (£)
+          <input
+            id="monthly-deposit"
+            name="monthlyDeposit"
+            type="number"
+            min="0"
+            step="0.01"
+            value="250"
+            required
+          />
+        </label>
+        <label>
+          Annual interest rate (%)
+          <input
+            id="interest-rate"
+            name="annualRatePercent"
+            type="number"
+            min="0"
+            step="0.01"
+            value="4.5"
+            required
+          />
+        </label>
+        <label>
+          Years
+          <input
+            id="years"
+            name="years"
+            type="number"
+            min="0"
+            step="1"
+            value="10"
+            required
+          />
+        </label>
+
+        <p id="form-error" class="error" hidden></p>
+        <button type="submit">Calculate</button>
+      </form>
+
+      <section id="result" class="card result" aria-live="polite">
+        <p class="result-label">Final balance</p>
+        <p id="final-balance" class="result-value">—</p>
+      </section>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
